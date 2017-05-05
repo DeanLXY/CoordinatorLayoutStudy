@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.wangx.coordinatorlayoutstudy.MainActivity">
+
+    <com.example.wangx.coordinatorlayoutstudy.MoveView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:background="#3366cc" />
+
+    <Button
+        app:layout_behavior="com.example.wangx.coordinatorlayoutstudy.MoveBehavior"
+        android:layout_width="wrap_content"
+        android:text="Hello Child"
+        android:background="#ffff00"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content" />
+</android.support.design.widget.CoordinatorLayout>
